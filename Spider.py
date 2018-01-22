@@ -71,12 +71,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-'''
-url = 'https://movie.douban.com/top250'
-res = requests.get(url)
-soup = BeautifulSoup(res.text,"html.parser")
-titles = soup.find_all('div',class_='hd')
-for i in titles:
-    print(i.a.span.text)
-'''
